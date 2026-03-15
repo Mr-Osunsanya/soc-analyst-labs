@@ -1,0 +1,4 @@
+# Day 2 - Nmap Service Detection
+
+# Scan open ports and detect service versions
+nmap -sV localhost(127.0.0.1)=

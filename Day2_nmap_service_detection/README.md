@@ -1,0 +1,12 @@
+# Day 2 -Nmap Service Detetction 
+
+## Objective
+Identify services running on open ports and their versions using nmap
+
+## This helps:
+- Detect services and versions running on hosts.
+- Helps identify outdated or vulnerable.
+- Essential for threat assement and priortize montitoring.
+
+## Evidence 
+Screenshots of scan results are stored in the 'screenshots/' folder =
