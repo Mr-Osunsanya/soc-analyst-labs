@@ -1,0 +1,6 @@
+# Day 1 - Nmap Port Scan
+
+# Basic port scan 
+nmap localhost(127.0.0.1)
+=
+
