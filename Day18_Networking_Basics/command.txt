@@ -1,0 +1,6 @@
+# DAY 7 
+NETWORK BASICS
+
+sudo systemctl status ssh
+sudo ss -tunlp
+sudo ss -tunlp | grep ssh

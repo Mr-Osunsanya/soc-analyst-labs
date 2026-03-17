@@ -1,0 +1,33 @@
+
+## Day 5 Brute Force Detection (Complete Deep Version)
+
+## Commands Used
+
+- Scanning of Attacks or suspicious Logins
+* sudo cat /var/log/auth.log | grep "Failed password"
+
+- Automating Detection 
+* nano brute_detector .py
+^ The is where the script would be created to write to code to detect and alerts failed login attempts that are higher than the number of counts written for the logs
+
+- PYTHON AUTOMATION DETECTION CODE
+import re
+from collections import Counter
+
+logfile = open("var/log/auth.log")
+
+ips = []
+
+for line in logfile:
+    if "Failed password" in line: 
+        ip = re.search(r'\d+\.\d+\.\d+\.\d+', line)
+                                               if ip:
+                                                   ips.append(ip.group())
+count = Counter(ips)
+
+for ip, attempts in count.items():
+    if attempts > 5:
+        print("ALERT:", ip, "failed" attempts, "times")
+
+- RUN CODE
+python3 brute_detector.py=

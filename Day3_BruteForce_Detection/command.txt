@@ -1,0 +1,20 @@
+## Day 3 Brute Force Detection
+
+## Commands Use
+ Installed Hydra
+sudo apt install hydra -y
+
+## Create password list
+ec=ho -e "1234\npassword\nadmin\nubuntu" >pass.txt
+
+##Run brute force attack 
+
+hydra -l mr-osunsanya -P pass.txt
+ssh://127.0.0.1
+
+## Check Failed login attempts
+grep "Failed password" /var/log/auth.log
+
+## Observations
+Hydra attempted multiple passwords against the SSH service.
+Each Failed login attempt was recorded in "/var/log/auth.log
