@@ -9,7 +9,7 @@ The scan performed identified open ports and services running on the target host
 ## Port scanning helps:
 - Identify exposed services such as ssh port 22, which is very vulnerable.
 - Detect potential attack surfaces.
-- Prioritize network  monitoring.= 
+- Prioritize network  monitoring. 
 
 ## Tools Used
 - Nmap

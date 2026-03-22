@@ -5,11 +5,11 @@
 ## Extracting The Source IPs 
 - grep "Failed password" /var/log/auth.log | awk '{print $11}'
 -This  all IPs that attempted login
-## Counting Failed LOgin Attempts per IP
+## Counting Failed Login Attempts per IP
 - grep "Failed password" /var/log/auth.log awk '{print $11}' | sort | uniq -c | sort -nr | head -5
-- This identifes the Top 5 attacking IPs with the number of counts
+- This identifies the Top 5 attacking IPs with the number of counts
 
 ## Note
-- The command for extracting the source IPs would only bring out the port instead of the IPs due to it being a pratical lab work and not a full authorized scanning.
-- The command as well onlt bring out the ports with th number of counts and not the IPS for the same reason.= 
+- The command for extracting the source IPs would only bring out the port instead of the IPs due to it being a practical lab work and not a full authorized scanning.
+- The command as well only bring out the ports with the number of counts and not the IPS for the same reason.= 
 

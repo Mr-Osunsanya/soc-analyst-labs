@@ -1,8 +1,8 @@
 # Day 18 
-NETWORK BASICS(PORTS & SERVIICES)
+NETWORK BASICS(PORTS & SERVICES)
 
 OBJECTIVE
-Identifying open ports and running serviices using Ubuntu-Lab
+Identifying open ports and running services using Ubuntu-Lab
 and understand security implications.
 
 TOOLS USED
@@ -16,14 +16,14 @@ COMMANDS EXECUTED
 
 ANALYSIS
 
-Open ports act as entry points into s sysyem.
+Open ports act as entry points into s system.
 Each running service increases the attack surface.
 SSH(PORT 22) is particularly sensitive because it allows remote access and it's commonly targeted by brute force attacks.
 
-SECUITY INSIGHT
+SECURITY INSIGHT
 - Only necessary ports should be open
-- SSH should be monitored and be priortize most above all.
-- Unuesd services should be disabled to reduce risk
+- SSH should be monitored and be prioritize most above all.
+- Unused services should be disabled to reduce risk
 
 CONCLUSIVE ANALYST NOTE
-Port 22(SSH) is a high value target in cybersecurity. Proper monitoring and protection mechanisms such as Fail2ban are recommended.
+Port 22(SSH) is a high value target in Cybersecurity. Proper monitoring and protection mechanisms such as Fail2ban are recommended.

@@ -30,4 +30,4 @@ for ip, attempts in count.items():
         print("ALERT:", ip, "failed" attempts, "times")
 
 - RUN CODE
-python3 brute_detector.py=
+python3 brute_detector.py
