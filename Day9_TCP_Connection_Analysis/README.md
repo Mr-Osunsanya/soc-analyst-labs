@@ -1,4 +1,4 @@
-## Day 11 - TCP Connection ANALYSIS (WIRESHARK)
+## Day 9 - TCP Connection ANALYSIS (WIRESHARK)
 
 ## Objective 
 Analze TCP connections and understand how devices communicate over a network.

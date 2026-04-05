@@ -1,7 +1,7 @@
-# Day15 -File Intergity Monitoring (AIDE)
+# Day 14 -File Integrity Monitoring (AIDE)
 
 ## Objective
-Detect unauthorized file chnages on the system
+Detect unauthorized file changes on the system
 
 ## Tool
 AIDE(Advanced Intrusion Detection Environment)
@@ -9,7 +9,7 @@ AIDE(Advanced Intrusion Detection Environment)
 ## Activities 
 - Installed the AIDE
 - Created a baseline database
-- Performed an integirty ceck
+- Performed an integrity check
 - Simulated a file modification
 - Detected changes
 

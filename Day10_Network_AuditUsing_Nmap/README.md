@@ -1,4 +1,4 @@
-# DAY 21 - Network Audit with Nmap
+# DAY 10 - Network Audit with Nmap
 
 ## Objective
 Scan sysytem to identify ports, services, and OS.
