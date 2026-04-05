@@ -1,0 +1,11 @@
+## DAY 8
+
+## COMMANDS USED
+
+sudo apt update
+sudo apt install tcpdump -y
+
+sudo tcpdump -i any
+sudo tcpdump -i any port 22
+
+

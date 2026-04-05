@@ -1,0 +1,22 @@
+# =============================================
+# DAY 14 -  File integrity Monitoring (AIDE)
+# =============================================
+
+# install AIDE
+sudo apt update 
+sudo apt install aide -y
+
+# Initialize database
+sudo aideinit
+
+#Activate database
+sudo mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db
+
+#Running integrity check
+sudo aide --check
+
+# Simulate file change
+echo "hacked" >> testfile.txt
+
+# Checking again
+sudo aid -- check

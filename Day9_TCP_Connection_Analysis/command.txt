@@ -1,0 +1,21 @@
+# ===================================
+# Day 20 - TCP Analysis (Wireshark)
+# ===================================
+
+# Start wireshark(GUI)
+wireshark
+
+# Apply filter: show only TCP traffic
+tcp
+
+# Show connection attempts (SYN packets)
+tcp.flags.syn == 1
+
+# Show rejected connections (RST packets)
+tcp.flags.reset == 1
+
+# Show successful connections (SYN-ACK)
+tcp.flags.syn == 1 && tcp.flags.ack == 1
+
+## Left click > Right-click packet > follow > TCP Stream
+

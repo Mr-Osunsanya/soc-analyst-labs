@@ -1,0 +1,10 @@
+# DAY 11 - BRUTE FORCE ANAYLSIS ( NMAP NSE)
+
+## Objective 
+Use automated script-based attack.
+
+# nmap brute script
+nmap --script ssh-brute -p 22 localhost
+
+# Check logs
+cat/var/log/auth.log | grep ssh

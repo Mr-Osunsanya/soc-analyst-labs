@@ -1,0 +1,19 @@
+# ===============================================
+# Day 24 - User Management & Privilege Control
+# ===============================================
+
+# Check sudo users
+getent group sudo
+
+# Check sudo logs
+cat /var/log/auth.log | grep sudo
+
+# Check login history
+last
+
+# Lock user
+sudp passwd -l username
+
+# Unlock user
+sudo passwd -u username
+

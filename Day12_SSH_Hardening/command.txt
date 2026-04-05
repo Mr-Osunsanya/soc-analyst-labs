@@ -1,0 +1,14 @@
+# =======================
+# Day 11 - SSH HARDENING
+# =======================
+
+# Open SSH config
+sudo nano /etc/ssh/sshd_config
+
+# Restart SSH
+sudo systemctl restart ssh
+
+# Check SSH Status
+sudo systemctl status ssh
+
+

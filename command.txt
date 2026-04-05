@@ -1,0 +1,19 @@
+## Day 20 Network Traffic Analysis
+
+##Command Used
+
+'''bash
+# Run Scan
+nmap -sS localhost 
+nmap localhost
+
+# Filters
+tcp
+tcp.flags.syn == 1
+tcp.flags.reset == 1
+tcp.flags.syn == 1 && tcp.flags.acl == 1
+
+## Follow Stream ( Wireshark)
+## Left-click
+## Right-click > Follow > TCP Stream
+

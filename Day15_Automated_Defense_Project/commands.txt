@@ -1,0 +1,15 @@
+# ===============================
+# Day 16 - Automated Defense
+# ===============================
+
+# Create script
+nano auto_defender.py
+
+# Run script 
+sudo python auto_defender.py
+
+# Check blocked IPS
+sudo iptables -l
+
+# Test attack
+hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://localhost

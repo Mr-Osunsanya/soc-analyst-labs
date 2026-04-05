@@ -1,0 +1,15 @@
+# =============================
+# Day 17 - Live Monitoring
+# =============================
+
+# Create script
+nano live_defender.py
+
+# Run script 
+sudo python3 live_defender.py
+
+# Run attack (test)
+hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://localhost
+
+# Check firewall
+sudo ufw status

@@ -1,0 +1,21 @@
+# ===========================
+# Day 16 - Full Simulation
+# ===========================
+
+# Attack
+hydra -l admin -P passwords.txt 127.0.0.1 ssh -t 4
+
+# Detect
+cat /var/log/auth.log |grep "Failed password"
+
+# Analyze
+cat /var/log/auth.log | grep "Failed password" | awk '{print $11}' | sort | uniq -c | sort -nr
+
+# Block
+sudo ufw deny from 127.0.0.1(Local-host)
+
+# Run automation 
+sudo python3 auto_defender.py
+
+# Verify
+sudo ufw status

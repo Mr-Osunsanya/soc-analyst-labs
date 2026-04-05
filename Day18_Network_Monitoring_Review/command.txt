@@ -1,0 +1,26 @@
+# ============================
+# Day 18 - Network Monitoring
+# ============================
+
+# Capture traffic
+# Command: sudo tcpdump -l lo -w traffic.pcap
+
+# Generate HTTP Traffic
+# curl http://127.0.0.1
+
+# Generate ICMP traffic
+# Command: ping 127.0.0.1(Local-host) 
+
+# Stop capture (CRTL + C)
+
+# Open in Wireshark
+# Command: wireshark traffic.pcap
+
+
+# Filters used
+# - tcp
+# - tcp.flags.syn == 1
+# - ip.addr = 127.0.0.1
+# - tcp.flags.reset == 1
+
+ 
